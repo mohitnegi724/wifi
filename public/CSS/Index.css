@@ -1,0 +1,343 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+p,a,h1,h2,h3,h4,ul,li{
+	padding: 0;
+	margin: 0;
+}
+.MainContainer{
+	width: 100%;
+	height: 100%;
+}
+#HeaderContainer{
+	z-index: 2000;
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	display: inline-block;
+	position: fixed;
+}
+#Logo{
+	cursor: pointer;
+	margin-left:50px; 
+	position: absolute;
+	display: inline-block;
+	color: white;
+	float: left;
+	line-height: 4;
+}
+#MenuOptions{
+	text-align: center;
+	width: 100vw;
+	position: absolute;
+	display: inline-block;
+}
+#MenuOptions ul{
+	margin-right: 10px;
+	display: inline-block;
+	list-style: none;
+	line-height: 3;
+}
+#MenuOptions ul li{
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+    padding-bottom: 5px;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	margin: 5px;
+	cursor: pointer;
+	color: rgba(252,252,252,1);
+	transition: 0.9s ease-in-out;
+}
+#MenuOptions ul li:hover{
+	color: white;
+}
+.Section01{
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	object-fit: cover;
+	background-image: url("http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_720/images/live/p0/54/3j/p0543jnx.jpg");
+}
+#Section01TextContainer{
+	text-transform: uppercase;
+	color: white;
+	background-color: rgba(32,32,32,0.5);
+	font-size: 2vh;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 40px;
+	transform: translate(-50%,-50%);
+}
+.Section02{
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+	background-image: url("https://wearetop10.com/wp-content/uploads/2015/09/Wireless-Router.jpg");
+}
+#Section02LeftTextContainer{
+	padding-top: 0;
+    padding-bottom: 0;
+    color: #333;
+	float: left;
+	width: 50vw;
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: scroll;
+	background-color: rgba(250, 250, 250, 0.8);
+	box-shadow: 0px 0px 0px rgba(32,32,32,0.5);
+}
+#Section02LeftText{
+	font-size: 2vh;
+	position: relative;
+	padding-top: 100px;
+	padding-left: 50px;
+}
+#AboutUs{
+	margin: 0 0 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+	color: black;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(19,203,134);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+.AboutInfoSection{
+	position: relative;
+	width: 90%;
+	text-align: justify;
+}
+.Section03{
+	width: 100%;
+	padding-top: 65px;
+	height: 90vh;
+	object-fit: cover;
+	background-color: #f1f1f1;
+	color: black;	
+}
+#Section03TextContainer{
+	text-align: center;
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+#Plans{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	position: relative;
+    font-weight: 600;
+	color: black; 
+}
+#Plans h3{
+	margin: 0 0 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid rgb(19,203,134);
+    padding-bottom: 15px;
+    display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+}
+#Section03TextContainer>ul{
+	padding: 0;
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+	display: inline-block;
+	height: 400px;
+	margin-right:5px;
+	margin-left:5px;
+	text-align: center;
+	transition: 0.9s ease-in-out;
+	box-shadow: 0px 0px 1px rgba(32,32,32,0.5);
+	cursor: pointer;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+#Section03TextContainer>ul:hover{
+	box-shadow: 0px 0px 8px rgba(32,32,32,0.5);
+}
+#Section03TextContainer>ul>li{
+}
+.Section04{
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+	background-image: url("http://www.jtlandscaping.net/wp-content/uploads/2018/05/contactus.jpg");	
+}
+.ContactUs{
+	text-align: center;
+	width: 1200px;
+	position: relative;
+	padding-top: 65px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#ContactUsHeading{
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid rgb(19,203,134);
+    padding-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;	
+}
+.ContactUsForm{
+	margin-top: 60px;
+	float: right;
+	position: relative;
+	width:100%;
+	height: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	/*box-shadow: 0px 0px 8px rgba(32,32,32,0.5);
+	background-color: rgba(250, 250, 250, 0.4);*/
+}
+#ourAddress{
+	text-shadow: 0px 0px 18px rgba(32,32,32,0.9);
+	color: white
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+	.Section03 {
+    width: 100%;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    height: 100%;
+    object-fit: cover;
+    background-color: #f1f1f1;
+    color: black;
+	}
+	.Section04{
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: right;
+	background-size: cover;
+	object-fit: cover;
+	background-image: url("http://www.jtlandscaping.net/wp-content/uploads/2018/05/contactus.jpg");	
+	}
+	.ContactUs{
+	text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	#ContactUsHeading{
+	    letter-spacing: 1px;
+	    font-weight: 600;
+	    color: black;
+	    border-bottom: 2px solid rgb(19,203,134);
+	    padding-bottom: 15px;
+	    display: inline-block;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    padding-bottom: 10px;
+	    margin-left: auto;
+	    margin-right: auto;	
+	}
+	.ContactUsOptions{
+		padding-top: 50px;
+		text-align: center;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.ContactUsForm{
+		margin-top:20px;
+		float: none;
+		position: relative;
+		width:100%;
+		height: 500px;
+		margin-right: auto;
+		margin-left: auto;
+		/*box-shadow: 0px 0px 8px rgba(32,32,32,0.5);
+		background-color: rgba(250, 250, 250, 0.4);*/
+	}
+	#Section03TextContainer {
+	    text-align: center;
+	    width: 768px;
+	    height: 100%;
+	    position: relative;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	#Section03TextContainer>ul{
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		display: inline-block;
+		height: 400px;
+		margin-right:5px;
+		margin-left:5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		transition: 0.9s ease-in-out;
+		box-shadow: 0px 0px 1px rgba(32,32,32,0.5);
+		cursor: pointer;
+		padding-top: 10px;
+		text-transform: uppercase;
+	}
+	#Section03TextContainer>ul:hover{
+		box-shadow: 0px 0px 20px rgba(32,32,32,0.5);
+	}
+	#Section03TextContainer>ul>li{
+	}
+	#ourAddress {
+    text-shadow: 0px 0px 18px rgba(32,32,32,0.9);
+    color: white;
+    font-size: 2vw;
+	}
+}
